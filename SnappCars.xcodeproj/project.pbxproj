@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8505F7A8FE2E58E58870B4F1 /* Pods_SnappCarsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8477344AC90F1D92DA05B350 /* Pods_SnappCarsTests.framework */; };
+		920FC9302125B4D300B6348A /* RequestManager_SnappCarResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC92F2125B4D300B6348A /* RequestManager_SnappCarResultExtension.swift */; };
+		920FC9362125B79600B6348A /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC9352125B79600B6348A /* ApiResult.swift */; };
+		920FC93B2125B84D00B6348A /* ResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC9382125B84D00B6348A /* ResponseHandler.swift */; };
+		920FC93D2125B84D00B6348A /* SnappCarResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC93A2125B84D00B6348A /* SnappCarResponseHandler.swift */; };
+		920FC9412125C79100B6348A /* SnappCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC9402125C79100B6348A /* SnappCar.swift */; };
+		920FC9432126C5FE00B6348A /* SnappCarGeoQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC9422126C5FE00B6348A /* SnappCarGeoQuery.swift */; };
+		920FC9452126D19600B6348A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC9442126D19600B6348A /* BaseViewController.swift */; };
+		920FC9472126E0FE00B6348A /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC9462126E0FE00B6348A /* UIColorExtension.swift */; };
+		920FC949212724B400B6348A /* SnappCarError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 920FC948212724B400B6348A /* SnappCarError.swift */; };
+		92B699E12123FAD10070F2F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B699E02123FAD10070F2F1 /* AppDelegate.swift */; };
+		92B699E62123FAD10070F2F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92B699E42123FAD10070F2F1 /* Main.storyboard */; };
+		92B699E82123FAD30070F2F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92B699E72123FAD30070F2F1 /* Assets.xcassets */; };
+		92B699F62123FAD30070F2F1 /* SnappCarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B699F52123FAD30070F2F1 /* SnappCarsTests.swift */; };
+		92B69A042123FBEE0070F2F1 /* SnappCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A032123FBEE0070F2F1 /* SnappCarViewController.swift */; };
+		92B69A09212433A40070F2F1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A08212433A40070F2F1 /* Constants.swift */; };
+		92B69A4F21246CC20070F2F1 /* AppTableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A4D21246CC20070F2F1 /* AppTableview.swift */; };
+		92B69A5021246CC20070F2F1 /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A4E21246CC20070F2F1 /* AlertController.swift */; };
+		92B69A532124709C0070F2F1 /* SnappCarResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A522124709C0070F2F1 /* SnappCarResult.swift */; };
+		92B69A55212470F50070F2F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A54212470F50070F2F1 /* User.swift */; };
+		92B69A62212474F60070F2F1 /* PriceInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A61212474F60070F2F1 /* PriceInformation.swift */; };
+		92B69A642124757C0070F2F1 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A632124757C0070F2F1 /* Car.swift */; };
+		92B69A662124764A0070F2F1 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A652124764A0070F2F1 /* Flags.swift */; };
+		92B69A68212476CA0070F2F1 /* Sums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A67212476CA0070F2F1 /* Sums.swift */; };
+		92B69A6C212478450070F2F1 /* SnappCarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A6B212478450070F2F1 /* SnappCarTableViewCell.swift */; };
+		92B69A6E212479070070F2F1 /* ResultPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A6D212479070070F2F1 /* ResultPresenter.swift */; };
+		92B69A70212497F90070F2F1 /* SnappCarQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A6F212497F90070F2F1 /* SnappCarQuery.swift */; };
+		92B69A73212498F90070F2F1 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A72212498F90070F2F1 /* Country.swift */; };
+		92B69A7521249AAE0070F2F1 /* SortType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A7421249AAE0070F2F1 /* SortType.swift */; };
+		92B69A7721249B7F0070F2F1 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A7621249B7F0070F2F1 /* Order.swift */; };
+		92B69A8021249F8D0070F2F1 /* ApiRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92B69A7F21249F8D0070F2F1 /* ApiRouter.swift */; };
+		92E01A582128A0D6009E3338 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E01A572128A0D6009E3338 /* DataStore.swift */; };
+		92E01A5A2129CD45009E3338 /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E01A592129CD45009E3338 /* BounceButton.swift */; };
+		92E01A5C2129DA4C009E3338 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E01A5B2129DA4C009E3338 /* ActivityIndicator.swift */; };
+		92E01A5E2129F2E7009E3338 /* CountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E01A5D2129F2E7009E3338 /* CountryViewController.swift */; };
+		92E01A602129F590009E3338 /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92E01A5F2129F590009E3338 /* CountryTableViewCell.swift */; };
+		92F96242212539E70069CD79 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F96241212539E70069CD79 /* RequestManager.swift */; };
+		9EE23DC67DBFB34DABD290B7 /* Pods_SnappCars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 013C2BB3B53BACB18A76D63F /* Pods_SnappCars.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		92B699F22123FAD30070F2F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 92B699D52123FAD10070F2F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92B699DC2123FAD10070F2F1;
+			remoteInfo = SnappCars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		92B69A7C21249F1D0070F2F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		013C2BB3B53BACB18A76D63F /* Pods_SnappCars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnappCars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		168372A4A1D132C17B0555B9 /* Pods-SnappCarsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappCarsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnappCarsTests/Pods-SnappCarsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D77C9449001129799452138 /* Pods-SnappCarsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappCarsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnappCarsTests/Pods-SnappCarsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5FE1B0CDB52409016592FEB4 /* Pods-SnappCars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappCars.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnappCars/Pods-SnappCars.debug.xcconfig"; sourceTree = "<group>"; };
+		8477344AC90F1D92DA05B350 /* Pods_SnappCarsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SnappCarsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		920FC92F2125B4D300B6348A /* RequestManager_SnappCarResultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager_SnappCarResultExtension.swift; sourceTree = "<group>"; };
+		920FC9352125B79600B6348A /* ApiResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		920FC9382125B84D00B6348A /* ResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResponseHandler.swift; sourceTree = "<group>"; };
+		920FC93A2125B84D00B6348A /* SnappCarResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnappCarResponseHandler.swift; sourceTree = "<group>"; };
+		920FC9402125C79100B6348A /* SnappCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappCar.swift; sourceTree = "<group>"; };
+		920FC9422126C5FE00B6348A /* SnappCarGeoQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappCarGeoQuery.swift; sourceTree = "<group>"; };
+		920FC9442126D19600B6348A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		920FC9462126E0FE00B6348A /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		920FC948212724B400B6348A /* SnappCarError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnappCarError.swift; sourceTree = "<group>"; };
+		92B699DD2123FAD10070F2F1 /* SnappCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnappCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B699E02123FAD10070F2F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		92B699E52123FAD10070F2F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		92B699E72123FAD30070F2F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		92B699EC2123FAD30070F2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B699F12123FAD30070F2F1 /* SnappCarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SnappCarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		92B699F52123FAD30070F2F1 /* SnappCarsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappCarsTests.swift; sourceTree = "<group>"; };
+		92B699F72123FAD30070F2F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		92B69A032123FBEE0070F2F1 /* SnappCarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnappCarViewController.swift; sourceTree = "<group>"; };
+		92B69A08212433A40070F2F1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		92B69A4D21246CC20070F2F1 /* AppTableview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppTableview.swift; sourceTree = "<group>"; };
+		92B69A4E21246CC20070F2F1 /* AlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		92B69A522124709C0070F2F1 /* SnappCarResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappCarResult.swift; sourceTree = "<group>"; };
+		92B69A54212470F50070F2F1 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		92B69A61212474F60070F2F1 /* PriceInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceInformation.swift; sourceTree = "<group>"; };
+		92B69A632124757C0070F2F1 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		92B69A652124764A0070F2F1 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
+		92B69A67212476CA0070F2F1 /* Sums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sums.swift; sourceTree = "<group>"; };
+		92B69A6B212478450070F2F1 /* SnappCarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappCarTableViewCell.swift; sourceTree = "<group>"; };
+		92B69A6D212479070070F2F1 /* ResultPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultPresenter.swift; sourceTree = "<group>"; };
+		92B69A6F212497F90070F2F1 /* SnappCarQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappCarQuery.swift; sourceTree = "<group>"; };
+		92B69A72212498F90070F2F1 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		92B69A7421249AAE0070F2F1 /* SortType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortType.swift; sourceTree = "<group>"; };
+		92B69A7621249B7F0070F2F1 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		92B69A7F21249F8D0070F2F1 /* ApiRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRouter.swift; sourceTree = "<group>"; };
+		92E01A572128A0D6009E3338 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		92E01A592129CD45009E3338 /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
+		92E01A5B2129DA4C009E3338 /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		92E01A5D2129F2E7009E3338 /* CountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewController.swift; sourceTree = "<group>"; };
+		92E01A5F2129F590009E3338 /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		92F96241212539E70069CD79 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		A0AC3537EECB48E12642374C /* Pods-SnappCars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnappCars.release.xcconfig"; path = "Pods/Target Support Files/Pods-SnappCars/Pods-SnappCars.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92B699DA2123FAD10070F2F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EE23DC67DBFB34DABD290B7 /* Pods_SnappCars.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B699EE2123FAD30070F2F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8505F7A8FE2E58E58870B4F1 /* Pods_SnappCarsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38EE3A4DE4D751B601DBB770 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5FE1B0CDB52409016592FEB4 /* Pods-SnappCars.debug.xcconfig */,
+				A0AC3537EECB48E12642374C /* Pods-SnappCars.release.xcconfig */,
+				168372A4A1D132C17B0555B9 /* Pods-SnappCarsTests.debug.xcconfig */,
+				1D77C9449001129799452138 /* Pods-SnappCarsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		920FC91E212550DD00B6348A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				013C2BB3B53BACB18A76D63F /* Pods_SnappCars.framework */,
+				8477344AC90F1D92DA05B350 /* Pods_SnappCarsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		920FC9372125B84D00B6348A /* Response Handler */ = {
+			isa = PBXGroup;
+			children = (
+				920FC9382125B84D00B6348A /* ResponseHandler.swift */,
+				920FC93A2125B84D00B6348A /* SnappCarResponseHandler.swift */,
+			);
+			path = "Response Handler";
+			sourceTree = "<group>";
+		};
+		92B699D42123FAD10070F2F1 = {
+			isa = PBXGroup;
+			children = (
+				92B699DF2123FAD10070F2F1 /* SnappCars */,
+				92B699F42123FAD30070F2F1 /* SnappCarsTests */,
+				92B699DE2123FAD10070F2F1 /* Products */,
+				920FC91E212550DD00B6348A /* Frameworks */,
+				38EE3A4DE4D751B601DBB770 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		92B699DE2123FAD10070F2F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92B699DD2123FAD10070F2F1 /* SnappCars.app */,
+				92B699F12123FAD30070F2F1 /* SnappCarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		92B699DF2123FAD10070F2F1 /* SnappCars */ = {
+			isa = PBXGroup;
+			children = (
+				92B699E02123FAD10070F2F1 /* AppDelegate.swift */,
+				92B699E42123FAD10070F2F1 /* Main.storyboard */,
+				92B699E72123FAD30070F2F1 /* Assets.xcassets */,
+				92B699EC2123FAD30070F2F1 /* Info.plist */,
+				92B69A062123FC660070F2F1 /* Services */,
+				92B69A052123FC290070F2F1 /* Models */,
+				92B69A022123FBEE0070F2F1 /* View Controllers */,
+				92B69A5121246EF60070F2F1 /* Presenters */,
+				92B69A07212433890070F2F1 /* Constants */,
+				92B69A4C21246CC20070F2F1 /* Extensions */,
+			);
+			path = SnappCars;
+			sourceTree = "<group>";
+		};
+		92B699F42123FAD30070F2F1 /* SnappCarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				92B699F52123FAD30070F2F1 /* SnappCarsTests.swift */,
+				92B699F72123FAD30070F2F1 /* Info.plist */,
+			);
+			path = SnappCarsTests;
+			sourceTree = "<group>";
+		};
+		92B69A022123FBEE0070F2F1 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				920FC9442126D19600B6348A /* BaseViewController.swift */,
+				92B69A032123FBEE0070F2F1 /* SnappCarViewController.swift */,
+				92B69A6B212478450070F2F1 /* SnappCarTableViewCell.swift */,
+				92E01A5D2129F2E7009E3338 /* CountryViewController.swift */,
+				92E01A5F2129F590009E3338 /* CountryTableViewCell.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		92B69A052123FC290070F2F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				920FC948212724B400B6348A /* SnappCarError.swift */,
+				920FC9352125B79600B6348A /* ApiResult.swift */,
+				92B69A522124709C0070F2F1 /* SnappCarResult.swift */,
+				920FC9402125C79100B6348A /* SnappCar.swift */,
+				92B69A67212476CA0070F2F1 /* Sums.swift */,
+				92B69A54212470F50070F2F1 /* User.swift */,
+				92B69A652124764A0070F2F1 /* Flags.swift */,
+				92B69A632124757C0070F2F1 /* Car.swift */,
+				92B69A61212474F60070F2F1 /* PriceInformation.swift */,
+				92E01A572128A0D6009E3338 /* DataStore.swift */,
+				92B69A71212498D00070F2F1 /* Query Models */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		92B69A062123FC660070F2F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				920FC9372125B84D00B6348A /* Response Handler */,
+				92F96240212539AF0069CD79 /* Request Manager */,
+				92B69A692124779B0070F2F1 /* Router */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		92B69A07212433890070F2F1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				92B69A08212433A40070F2F1 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		92B69A4C21246CC20070F2F1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				92E01A5B2129DA4C009E3338 /* ActivityIndicator.swift */,
+				92B69A4D21246CC20070F2F1 /* AppTableview.swift */,
+				92B69A4E21246CC20070F2F1 /* AlertController.swift */,
+				920FC9462126E0FE00B6348A /* UIColorExtension.swift */,
+				92E01A592129CD45009E3338 /* BounceButton.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		92B69A5121246EF60070F2F1 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				92B69A6D212479070070F2F1 /* ResultPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		92B69A692124779B0070F2F1 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				92B69A7F21249F8D0070F2F1 /* ApiRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		92B69A71212498D00070F2F1 /* Query Models */ = {
+			isa = PBXGroup;
+			children = (
+				92B69A6F212497F90070F2F1 /* SnappCarQuery.swift */,
+				920FC9422126C5FE00B6348A /* SnappCarGeoQuery.swift */,
+				92B69A72212498F90070F2F1 /* Country.swift */,
+				92B69A7421249AAE0070F2F1 /* SortType.swift */,
+				92B69A7621249B7F0070F2F1 /* Order.swift */,
+			);
+			path = "Query Models";
+			sourceTree = "<group>";
+		};
+		92F96240212539AF0069CD79 /* Request Manager */ = {
+			isa = PBXGroup;
+			children = (
+				92F96241212539E70069CD79 /* RequestManager.swift */,
+				920FC92F2125B4D300B6348A /* RequestManager_SnappCarResultExtension.swift */,
+			);
+			path = "Request Manager";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		92B699DC2123FAD10070F2F1 /* SnappCars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92B699FA2123FAD30070F2F1 /* Build configuration list for PBXNativeTarget "SnappCars" */;
+			buildPhases = (
+				27CD2FE27D238A8EDA816A6B /* [CP] Check Pods Manifest.lock */,
+				92B699D92123FAD10070F2F1 /* Sources */,
+				92B699DA2123FAD10070F2F1 /* Frameworks */,
+				92B699DB2123FAD10070F2F1 /* Resources */,
+				92B69A7C21249F1D0070F2F1 /* Embed Frameworks */,
+				A6F39854D18DC5946E0B82AD /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnappCars;
+			productName = SnappCars;
+			productReference = 92B699DD2123FAD10070F2F1 /* SnappCars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		92B699F02123FAD30070F2F1 /* SnappCarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 92B699FD2123FAD30070F2F1 /* Build configuration list for PBXNativeTarget "SnappCarsTests" */;
+			buildPhases = (
+				CC872193CEF3C6F5791A12C4 /* [CP] Check Pods Manifest.lock */,
+				92B699ED2123FAD30070F2F1 /* Sources */,
+				92B699EE2123FAD30070F2F1 /* Frameworks */,
+				92B699EF2123FAD30070F2F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92B699F32123FAD30070F2F1 /* PBXTargetDependency */,
+			);
+			name = SnappCarsTests;
+			productName = SnappCarsTests;
+			productReference = 92B699F12123FAD30070F2F1 /* SnappCarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		92B699D52123FAD10070F2F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = BCLab;
+				TargetAttributes = {
+					92B699DC2123FAD10070F2F1 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					92B699F02123FAD30070F2F1 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 92B699DC2123FAD10070F2F1;
+					};
+				};
+			};
+			buildConfigurationList = 92B699D82123FAD10070F2F1 /* Build configuration list for PBXProject "SnappCars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 92B699D42123FAD10070F2F1;
+			productRefGroup = 92B699DE2123FAD10070F2F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				92B699DC2123FAD10070F2F1 /* SnappCars */,
+				92B699F02123FAD30070F2F1 /* SnappCarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		92B699DB2123FAD10070F2F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B699E82123FAD30070F2F1 /* Assets.xcassets in Resources */,
+				92B699E62123FAD10070F2F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B699EF2123FAD30070F2F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		27CD2FE27D238A8EDA816A6B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnappCars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6F39854D18DC5946E0B82AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SnappCars/Pods-SnappCars-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SnappCars/Pods-SnappCars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC872193CEF3C6F5791A12C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SnappCarsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		92B699D92123FAD10070F2F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B69A6E212479070070F2F1 /* ResultPresenter.swift in Sources */,
+				920FC9432126C5FE00B6348A /* SnappCarGeoQuery.swift in Sources */,
+				920FC93B2125B84D00B6348A /* ResponseHandler.swift in Sources */,
+				92E01A602129F590009E3338 /* CountryTableViewCell.swift in Sources */,
+				92B69A532124709C0070F2F1 /* SnappCarResult.swift in Sources */,
+				92B69A6C212478450070F2F1 /* SnappCarTableViewCell.swift in Sources */,
+				92B69A7521249AAE0070F2F1 /* SortType.swift in Sources */,
+				92E01A582128A0D6009E3338 /* DataStore.swift in Sources */,
+				92B69A042123FBEE0070F2F1 /* SnappCarViewController.swift in Sources */,
+				920FC93D2125B84D00B6348A /* SnappCarResponseHandler.swift in Sources */,
+				92B69A70212497F90070F2F1 /* SnappCarQuery.swift in Sources */,
+				920FC9302125B4D300B6348A /* RequestManager_SnappCarResultExtension.swift in Sources */,
+				92E01A5A2129CD45009E3338 /* BounceButton.swift in Sources */,
+				92B69A7721249B7F0070F2F1 /* Order.swift in Sources */,
+				92B69A62212474F60070F2F1 /* PriceInformation.swift in Sources */,
+				920FC949212724B400B6348A /* SnappCarError.swift in Sources */,
+				920FC9362125B79600B6348A /* ApiResult.swift in Sources */,
+				920FC9452126D19600B6348A /* BaseViewController.swift in Sources */,
+				920FC9472126E0FE00B6348A /* UIColorExtension.swift in Sources */,
+				92B69A5021246CC20070F2F1 /* AlertController.swift in Sources */,
+				92B69A68212476CA0070F2F1 /* Sums.swift in Sources */,
+				92B69A8021249F8D0070F2F1 /* ApiRouter.swift in Sources */,
+				92B69A4F21246CC20070F2F1 /* AppTableview.swift in Sources */,
+				92B69A642124757C0070F2F1 /* Car.swift in Sources */,
+				92B69A662124764A0070F2F1 /* Flags.swift in Sources */,
+				92E01A5C2129DA4C009E3338 /* ActivityIndicator.swift in Sources */,
+				920FC9412125C79100B6348A /* SnappCar.swift in Sources */,
+				92F96242212539E70069CD79 /* RequestManager.swift in Sources */,
+				92B699E12123FAD10070F2F1 /* AppDelegate.swift in Sources */,
+				92B69A09212433A40070F2F1 /* Constants.swift in Sources */,
+				92E01A5E2129F2E7009E3338 /* CountryViewController.swift in Sources */,
+				92B69A73212498F90070F2F1 /* Country.swift in Sources */,
+				92B69A55212470F50070F2F1 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		92B699ED2123FAD30070F2F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92B699F62123FAD30070F2F1 /* SnappCarsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		92B699F32123FAD30070F2F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 92B699DC2123FAD10070F2F1 /* SnappCars */;
+			targetProxy = 92B699F22123FAD30070F2F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		92B699E42123FAD10070F2F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92B699E52123FAD10070F2F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		92B699F82123FAD30070F2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		92B699F92123FAD30070F2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92B699FB2123FAD30070F2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FE1B0CDB52409016592FEB4 /* Pods-SnappCars.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V73ZJ9M9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SnappCars",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SnappCars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bclab.snappcar.SnappCars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		92B699FC2123FAD30070F2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0AC3537EECB48E12642374C /* Pods-SnappCars.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V73ZJ9M9P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SnappCars",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SnappCars/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bclab.snappcar.SnappCars;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		92B699FE2123FAD30070F2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 168372A4A1D132C17B0555B9 /* Pods-SnappCarsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V73ZJ9M9P;
+				INFOPLIST_FILE = SnappCarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bclab.snappcar.SnappCarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnappCars.app/SnappCars";
+			};
+			name = Debug;
+		};
+		92B699FF2123FAD30070F2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D77C9449001129799452138 /* Pods-SnappCarsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4V73ZJ9M9P;
+				INFOPLIST_FILE = SnappCarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.bclab.snappcar.SnappCarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SnappCars.app/SnappCars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		92B699D82123FAD10070F2F1 /* Build configuration list for PBXProject "SnappCars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B699F82123FAD30070F2F1 /* Debug */,
+				92B699F92123FAD30070F2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92B699FA2123FAD30070F2F1 /* Build configuration list for PBXNativeTarget "SnappCars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B699FB2123FAD30070F2F1 /* Debug */,
+				92B699FC2123FAD30070F2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		92B699FD2123FAD30070F2F1 /* Build configuration list for PBXNativeTarget "SnappCarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				92B699FE2123FAD30070F2F1 /* Debug */,
+				92B699FF2123FAD30070F2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 92B699D52123FAD10070F2F1 /* Project object */;
+}

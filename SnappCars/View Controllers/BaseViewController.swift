@@ -30,10 +30,10 @@ class BaseViewController: UIViewController {
     navigationController?.navigationBar.prefersLargeTitles = true
     navigationItem.largeTitleDisplayMode = .always
     navigationController?.navigationBar.largeTitleTextAttributes =
-      [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 40), NSAttributedStringKey.foregroundColor:UIColor.snappCarBlue]
+      [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 40), NSAttributedString.Key.foregroundColor:UIColor.snappCarBlue]
     navigationController?.navigationBar.titleTextAttributes =
-      [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20), NSAttributedStringKey.foregroundColor:UIColor.snappCarBlue]
-    navigationItem.backBarButtonItem?.setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20), NSAttributedStringKey.foregroundColor:UIColor.snappCarBlue], for: UIControlState.normal)
+      [NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor:UIColor.snappCarBlue]
+    navigationItem.backBarButtonItem?.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor:UIColor.snappCarBlue], for: UIControl.State.normal)
     navigationController?.navigationBar.tintColor = UIColor.snappCarBlue
   }
   

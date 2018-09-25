@@ -44,8 +44,6 @@ class SnappCarViewController: BaseViewController {
     let sortButton = UIBarButtonItem(customView: self.sortByButton)
     let countryButton = UIBarButtonItem(customView: self.chooseCountryButton)
     self.navigationItem.rightBarButtonItems = [sortButton,countryButton]
-    
-    
   }
 }
 
@@ -78,7 +76,8 @@ extension SnappCarViewController: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     if let cell = tableView.dequeueReusableCell(withIdentifier:"SnappCarTableViewCell", for: indexPath)
       as? SnappCarTableViewCell {
-      cell.selectionStyle = UITableViewCellSelectionStyle.none
+      cell.selectionStyle = UITableViewCell.SelectionStyle.none
+      // Do index path row checkPath.row
       cell.setupCell(result:self.resultsToDisplay?.results[indexPath.row])
       return cell
     }
@@ -160,11 +159,11 @@ extension SnappCarViewController: ResultView {
 
 extension SnappCarViewController {
   @objc func showSortActions(sender:UIButton!) {
-    var actions: [(String, UIAlertActionStyle)] = []
-    actions.append((SortType.Recommended.rawValue.capitalized, UIAlertActionStyle.default))
-    actions.append((SortType.Distance.rawValue.capitalized, UIAlertActionStyle.default))
-    actions.append((SortType.Price.rawValue.capitalized, UIAlertActionStyle.default))
-    actions.append(("Cancel", UIAlertActionStyle.cancel))
+    var actions: [(String, UIAlertAction.Style)] = []
+    actions.append((SortType.Recommended.rawValue.capitalized, UIAlertAction.Style.default))
+    actions.append((SortType.Distance.rawValue.capitalized, UIAlertAction.Style.default))
+    actions.append((SortType.Price.rawValue.capitalized, UIAlertAction.Style.default))
+    actions.append(("Cancel", UIAlertAction.Style.cancel))
     self.showActionsheet(viewController: self, title: "Sort By", message: "Sort the list by choosing an option.", actions: actions) { (index, sortType) in
       if index != 3 {
         self.snappCarQuery?.setSortType(sortType:SortType(rawValue: sortType.lowercased())!)

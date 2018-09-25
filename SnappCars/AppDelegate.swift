@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   var window: UIWindow?
   
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     self.setupBackButtonTitleAttributes()
     return true
@@ -42,6 +42,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   }
   
   fileprivate func setupBackButtonTitleAttributes() {
-    UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedStringKey.font: UIFont.systemFont(ofSize: 20), NSAttributedStringKey.foregroundColor:UIColor.snappCarBlue], for: UIControlState.normal)
+    UIBarButtonItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20), NSAttributedString.Key.foregroundColor:UIColor.snappCarBlue], for: UIControl.State.normal)
   }
 }

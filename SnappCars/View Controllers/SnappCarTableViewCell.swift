@@ -70,15 +70,15 @@ class SnappCarTableViewCell: UITableViewCell {
     priceLabel.textAlignment = .left
     
     // I could have used a String extension for this
-    let currencyAtrributes: [NSAttributedStringKey : Any] = [
-      NSAttributedStringKey.foregroundColor:
+    let currencyAtrributes: [NSAttributedString.Key : Any] = [
+      NSAttributedString.Key.foregroundColor:
         UIColor.snappCarTextGrey,
-      NSAttributedStringKey.font:
+      NSAttributedString.Key.font:
         UIFont.boldSystemFont(ofSize: 15)]
-    let priceAtrributes: [NSAttributedStringKey : Any] = [
-      NSAttributedStringKey.foregroundColor:
+    let priceAtrributes: [NSAttributedString.Key : Any] = [
+      NSAttributedString.Key.foregroundColor:
         UIColor.snappCarSubTextGrey,
-      NSAttributedStringKey.font:
+      NSAttributedString.Key.font:
         UIFont.systemFont(ofSize: 14)]
     
     if let currency = result?.priceInformation?.isoCurrencyCode,

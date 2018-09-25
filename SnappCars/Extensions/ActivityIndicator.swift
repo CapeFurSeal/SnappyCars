@@ -14,10 +14,10 @@ extension UIViewController {
 }
 
 extension UIViewController {
-  internal func startActivityIndicator(style: UIActivityIndicatorViewStyle = .whiteLarge, location: CGPoint? = nil) {
+  internal func startActivityIndicator(style: UIActivityIndicatorView.Style = .whiteLarge, location: CGPoint? = nil) {
     let loc = location ?? self.view.center
     DispatchQueue.main.async {
-      let activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: style)
+      let activityIndicator = UIActivityIndicatorView(style: style)
       activityIndicator.tag = self.activityIndicatorTag
       activityIndicator.color = UIColor.snappCarBlue
       activityIndicator.center = loc

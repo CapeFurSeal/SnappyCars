@@ -60,7 +60,7 @@ extension CountryViewController: UITableViewDataSource, UITableViewDelegate {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     if let cell = tableView.dequeueReusableCell(withIdentifier:"CountryTableViewCell", for: indexPath)
       as? CountryTableViewCell {
-      cell.selectionStyle = UITableViewCellSelectionStyle.none
+      cell.selectionStyle = UITableViewCell.SelectionStyle.none
       cell.setupCell(country:self.countries[indexPath.row])
       return cell
     }

@@ -1,6 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
-  - Kingfisher (4.8.1)
+  - Kingfisher (4.10.0)
   - ObjectMapper (3.3.0)
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
 
 PODFILE CHECKSUM: 40d85207dc37b6bed44b4c87f6bdeb9c14b5bd69

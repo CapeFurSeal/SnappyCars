@@ -14,7 +14,7 @@ extension UIViewController {
 }
 
 extension UIViewController {
-  internal func startActivityIndicator(style: UIActivityIndicatorView.Style = .whiteLarge, location: CGPoint? = nil) {
+  internal func startActivityIndicator(style: UIActivityIndicatorView.Style = .large, location: CGPoint? = nil) {
     let loc = location ?? self.view.center
     DispatchQueue.main.async {
       let activityIndicator = UIActivityIndicatorView(style: style)
